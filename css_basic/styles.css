@@ -75,3 +75,14 @@ header p {
 .project a:hover {
   text-decoration: underline;
 }
+/* Media Queries for smaller devices (smartphones) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;  /* Stack the content vertically on small screens */
+  }
+
+  article, aside {
+    flex: none;  /* Allow both article and aside to take full width */
+    width: 100%;
+  }
+}
