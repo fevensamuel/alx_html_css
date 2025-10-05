@@ -2,19 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Tweets</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweets</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
-        <h1>My Favorite Tweets</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+        </ul>
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
         <article>
-            <p>"Learning to code is like learning to speak a new language." — Someone smart</p>
-            <p>"HTML is the structure, CSS is the style, JavaScript is the personality!"</p>
+            <h1>Recent Tweets</h1>
+            <p>Here you will find some of my recent tweets.</p>
+
+	<!-- Emdedded Tweet -->
+	 <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Just a Tweet! <a href="https://twitter.com/someuser/status/1234567890">March 3, 2025</a></p>&mdash; Some User (@someuser) <a href="https://twitter.com/someuser/status/1234567890">March 3, 2025</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <!-- Example tweet content -->
+            <blockquote>
+                <p>"Learning web development is a fun and rewarding experience!" - @YourUsername</p>
+            </blockquote>
+
+            <blockquote>
+                <p>"Excited to build my first portfolio website!" - @YourUsername</p>
+            </blockquote>
         </article>
+
+        <aside>
+            <p>placeholder to add comment thread later</p>
+        </aside>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made by Feven Samuel - <a href="https://www.example.com" target="_blank">here</a></p>
+    </footer>
+
 </body>
 </html>
