@@ -1,0 +1,77 @@
+/* General Layout for the body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   /* Ensure body takes up at least 100% of the viewport height */
+  margin: 0;
+}
+
+/* Layout for the main section */
+main {
+  display: flex;
+  flex-direction: row;   /* Arrange children (article, aside) side by side */
+  flex: auto;            /* Allow main to take up remaining space */
+  gap: 20px;             /* Optional: Adds some space between article and aside */
+  padding: 20px;
+}
+
+/* Article takes up 2/3 of the space */
+article {
+  flex: 2;               /* 2/3 of the width */
+  overflow-y: auto;      /* Make article scrollable if content overflows */
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+/* Aside takes up 1/3 of the space */
+aside {
+  flex: 1;               /* 1/3 of the width */
+  overflow-y: auto;      /* Make aside scrollable if content overflows */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Optional styling for header and footer */
+header, footer {
+  padding: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Styling for project articles within the main content */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.project a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
