@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Our Results Section */
+.our-results {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result {
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.result p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Icon styles */
+.icon {
+    font-size: 3em;
+    color: #ff6f61; /* Primary color for icons */
+    margin-bottom: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .results {
+        flex-direction: column;
+    }
+    .result {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
