@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;  /* Start hidden for animation */
+    transform: translateY(50px); /* Start slightly below */
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Service Hover Animations */
+.service:hover {
+    transform: translateY(0px); /* Move to normal position */
+    opacity: 1; /* Fade in */
+}
+
+/* Add bouncing animation on hover */
+.service:hover {
+    animation: bounce 0.6s ease-out;
+}
+
+/* Bounce Animation Keyframes */
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Our Results Section */
+.our-results {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.our-results h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.result {
+    width: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 0;  /* Start hidden for animation */
+    transform: translateY(50px); /* Start slightly below */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Fade-in effect on load */
+.result:nth-child(1) {
+    animation: fadeIn 1s ease-out forwards;
+}
+.result:nth-child(2) {
+    animation: fadeIn 1.2s ease-out forwards;
+}
+.result:nth-child(3) {
+    animation: fadeIn 1.4s ease-out forwards;
+}
+
+/* Fade-in Keyframe */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services, .results {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .result {
+        width: 80%;
+    }
+}
